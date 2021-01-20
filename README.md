@@ -16,13 +16,24 @@
 - [React Navigation](https://reactnavigation.org/) (v5) for navigation
   - stacks
   - bottom tabs
-  - also icludes `NavigationService` fro navigatin outside react conponents
+  - also icludes `NavigationService` for navigating outside react components
 - [react-native-config](https://github.com/luggit/react-native-config) to manage
 separate environments (dev, staging, production).
 - [Mobx](https://mobx.js.org/) for state management
 - [lingui](https://github.com/lingui/js-lingui) for translations
 - [Expo unimodules](https://docs.expo.io/)
 - handy npm scripts.
+
+## TODOS
+
+- [ ] UI kit
+- [ ] error boundary  
+- [ ] bugsnag  
+- [ ] no network info panel
+- [ ] eslint & husky
+- [ ] fastlane
+- [ ] version (branch) with graphql ?
+- [ ] force update screen ?
 
 ## Getting started
 
