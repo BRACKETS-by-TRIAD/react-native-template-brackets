@@ -21,6 +21,7 @@
 separate environments (dev, staging, production).
 - [Mobx](https://mobx.js.org/) for state management
 - [lingui](https://github.com/lingui/js-lingui) for translations
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
 - [Expo unimodules](https://docs.expo.io/)
 - handy npm scripts.
 
