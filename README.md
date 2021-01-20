@@ -16,8 +16,14 @@
 - [React Navigation](https://reactnavigation.org/) (v5) for navigation
   - stacks
   - bottom tabs
+  - also icludes `NavigationService` fro navigatin outside react conponents
 - [react-native-config](https://github.com/luggit/react-native-config) to manage
 separate environments (dev, staging, production).
 - [Mobx](https://mobx.js.org/) for state management
+- [lingui](https://github.com/lingui/js-lingui) for translations
 - [Expo unimodules](https://docs.expo.io/)
 - handy npm scripts.
+
+## Getting started
+
+TODO

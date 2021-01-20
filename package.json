@@ -15,9 +15,12 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "android-release": "npx react-native run-android --variant=release",
-    "android-bundle-release": "./android/gradlew bundleRelease"
+    "android-bundle-release": "./android/gradlew bundleRelease",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
   },
   "dependencies": {
+    "@lingui/react": "^3.4.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.3",
     "@react-navigation/native": "^5.9.0",
@@ -36,13 +39,16 @@
     "rn-handy-utils": "^0.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
+    "@babel/core": "^7.12.10",
     "@babel/runtime": "^7.8.4",
+    "@lingui/cli": "^3.4.0",
+    "@lingui/macro": "^3.4.0",
     "@react-native-community/eslint-config": "^1.1.0",
     "@types/jest": "^25.2.3",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^25.1.0",
+    "babel-plugin-macros": "^3.0.1",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",

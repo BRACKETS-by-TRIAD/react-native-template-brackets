@@ -1,25 +1,21 @@
 import React from 'react';
-import {
-	Image,
-  SafeAreaView,
-  StatusBar,
-  View,
-} from 'react-native';
-import { images } from './utils/images';
-import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
+import { i18n } from '@lingui/core';
+import { I18nProvider } from '@lingui/react';
+
+i18n.load('en', require('./locales/en/messages'))
+i18n.activate('en')
 
 const App = () => {
   return (
-	<NavigationContainer>
-
-	  {/* <View>
-      	<StatusBar barStyle="dark-content" />
-		<SafeAreaView>
-
-			<Image source={images.logo}/>
-		</SafeAreaView>
-	  </View> */}
-	</NavigationContainer>
+	<I18nProvider i18n={i18n}>
+		<StatusBar
+			barStyle="dark-content"
+			translucent
+			backgroundColor="transparent"
+		/>
+		<Navigation />
+	</I18nProvider>
   );
 };
 
