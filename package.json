@@ -1,73 +1,34 @@
 {
-  "name": "reactNativeTemplateBrackets",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "dev": "react-native start",
-    "postinstall": "patch-package",
-    "svg:generate": "npx @svgr/cli -d app/assets/svg/generated app/assets/svg --native --ext tsx --typescript",
-    "tsc": "tsc",
-    "tsc:check": "tsc --noEmit",
-    "prettify": "prettier --list-different \"app/**/*\"",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "android-release": "npx react-native run-android --variant=release",
-    "android-bundle-release": "./android/gradlew bundleRelease",
-    "extract": "lingui extract",
-    "compile": "lingui compile"
+  "name": "react-native-template-brackets",
+  "version": "0.1.0",
+  "description": "Backets template to boost React Native projects.",
+  "scripts": {},
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BRACKETS-by-TRIAD/react-native-template-brackets.git"
   },
-  "dependencies": {
-    "@lingui/react": "^3.4.0",
-    "@react-native-async-storage/async-storage": "^1.13.3",
-    "@react-native-community/masked-view": "^0.1.10",
-    "@react-navigation/bottom-tabs": "^5.11.3",
-    "@react-navigation/native": "^5.9.0",
-    "@react-navigation/stack": "^5.13.0",
-    "lodash": "^4.17.20",
-    "mobx": "^6.0.4",
-    "patch-package": "^6.2.2",
-    "postinstall-postinstall": "^2.1.0",
-    "react": "16.13.1",
-    "react-native": "0.63.4",
-    "react-native-elements": "^3.1.0",
-    "react-native-gesture-handler": "^1.9.0",
-    "react-native-reanimated": "^1.13.2",
-    "react-native-safe-area-context": "^3.1.9",
-    "react-native-screens": "^2.16.1",
-    "react-native-styled.macro": "^0.11.0",
-    "react-native-svg": "^12.1.0",
-    "react-native-unimodules": "^0.12.0",
-    "rn-handy-utils": "^0.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/runtime": "^7.8.4",
-    "@lingui/cli": "^3.4.0",
-    "@lingui/macro": "^3.4.0",
-    "@react-native-community/eslint-config": "^1.1.0",
-    "@types/jest": "^25.2.3",
-    "@types/react-native": "^0.63.2",
-    "@types/react-test-renderer": "^16.9.2",
-    "babel-jest": "^25.1.0",
-    "babel-plugin-macros": "^3.0.1",
-    "eslint": "^6.5.1",
-    "jest": "^25.1.0",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "react-test-renderer": "16.13.1",
-    "typescript": "^3.8.3"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+  "keywords": [
+    "react",
+    "native",
+    "template",
+    "boilerplate",
+    "starter",
+    "typescript",
+    "brackets"
+  ],
+  "author": "Branislav Závracký <branislav.zavracky@brackets.sk>",
+  "license": "MIT",
+  "homepage": "https://github.com/BRACKETS-by-TRIAD/react-native-template-brackets",
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    }
   }
 }
