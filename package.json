@@ -1,5 +1,5 @@
 {
-  "name": "react-native-template-brackets",
+  "name": "@brackets/react-native-template-brackets",
   "version": "0.1.0",
   "description": "Backets template to boost React Native projects.",
   "scripts": {},

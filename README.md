@@ -46,8 +46,10 @@ separate environments (dev, staging, production).
 
 <p>Create a new project using the template.</p>
 
+- Note: the command will fail if you have the global legacy react-native-cli installed. Make sure you uninstall it first. More info at [react-native-community/cli](https://github.com/react-native-community/cli#about).
+
 ```
-npx react-native init MyApp --template react-native-template-brackets
+npx react-native init MyApp --template @brackets/react-native-template-brackets
 ```
 
 ## Recommended Libraries
