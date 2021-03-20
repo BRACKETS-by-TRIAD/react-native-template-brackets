@@ -10,7 +10,6 @@
     "postinstall": "patch-package",
     "svg:generate": "npx @svgr/cli -d app/assets/svg/generated app/assets/svg --native --ext tsx --typescript",
     "tsc:check": "tsc --noEmit",
-    "prettify": "prettier --list-different \"app/**/*\"",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "android-release": "npx react-native run-android --variant=release",
