@@ -9,7 +9,6 @@
     "dev": "react-native start",
     "postinstall": "patch-package",
     "svg:generate": "npx @svgr/cli -d app/assets/svg/generated app/assets/svg --native --ext tsx --typescript",
-    "tsc": "tsc",
     "tsc:check": "tsc --noEmit",
     "prettify": "prettier --list-different \"app/**/*\"",
     "test": "jest",
