@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"Home":"Home","Profile":"Profile"}};
