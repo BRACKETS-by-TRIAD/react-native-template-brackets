@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, ButtonProps as ElButtonProps } from 'react-native-elements'
 import styled from 'react-native-styled.macro'
 
-
 interface ButtonProps extends ElButtonProps {
   large?: boolean
   small?: boolean
@@ -19,9 +18,7 @@ export const ButtonPrimary: React.FC<ButtonProps> = ({
       }).style,
       buttonStyle,
     ]}
-    titleStyle={[
-      styled('text-sm small:text-xs', { small: rest.small }).style,
-    ]}
+    titleStyle={[styled('text-sm small:text-xs', { small: rest.small }).style]}
     containerStyle={styled('overflow-visible rounded-xl')}
     {...rest}
   />

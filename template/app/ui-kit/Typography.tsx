@@ -1,17 +1,21 @@
-import React from 'react';
-import { Text as RNText, TextProps as RNTextProps } from 'react-native';
-import styled from 'react-native-styled.macro';
+import React from 'react'
+import {
+  StyleProp,
+  Text as RNText,
+  TextProps as RNTextProps,
+  TextStyle,
+} from 'react-native'
+import styled from 'react-native-styled.macro'
 
 interface HeadingProps extends RNTextProps {
-  style?: object
+  style?: StyleProp<TextStyle>
   noWrap?: boolean
   white?: boolean
 }
 
 interface TextProps extends RNTextProps {
-  style?: object
+  style?: StyleProp<TextStyle>
   white?: boolean
-
   bold?: boolean
   semibold?: boolean
 }
@@ -27,13 +31,13 @@ const H: React.FC<HeadingProps> = ({
     style={[
       styled('text-gray-900 noWrap:flex-1 white:text-white', { noWrap, white })
         .style,
-      style ? style[0] : {},
+      style,
     ]}
     {...rest}
   >
     {children}
   </RNText>
-);
+)
 
 /**
  * Heading level 1
@@ -41,10 +45,10 @@ const H: React.FC<HeadingProps> = ({
  * font size: 36px
  */
 export const H1: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
-  <H style={{ ...styled('text-4xl').style, ...style }} {...rest}>
+  <H style={[styled('text-4xl').style, style]} {...rest}>
     {children}
   </H>
-);
+)
 
 /**
  * Heading level 2
@@ -52,10 +56,10 @@ export const H1: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
  * font size: 30px
  */
 export const H2: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
-  <H style={{ ...styled('text-3xl').style, ...style }} {...rest}>
+  <H style={[styled('text-3xl').style, style]} {...rest}>
     {children}
   </H>
-);
+)
 
 /**
  * Heading level 3
@@ -63,10 +67,10 @@ export const H2: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
  * font size: 24px
  */
 export const H3: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
-  <H style={{ ...styled('text-2xl').style, ...style }} {...rest}>
+  <H style={[styled('text-2xl').style, style]} {...rest}>
     {children}
   </H>
-);
+)
 
 /**
  * Heading level 4
@@ -74,10 +78,10 @@ export const H3: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
  * font size: 20px
  */
 export const H4: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
-  <H style={{ ...styled('text-xl').style, ...style }} {...rest}>
+  <H style={[styled('text-xl').style, style]} {...rest}>
     {children}
   </H>
-);
+)
 
 /**
  * Heading level 5
@@ -85,10 +89,10 @@ export const H4: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
  * font size: 18px
  */
 export const H5: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
-  <H style={{ ...styled('text-lg').style, ...style }} {...rest}>
+  <H style={[styled('text-lg').style, style]} {...rest}>
     {children}
   </H>
-);
+)
 
 /**
  * Heading level 6
@@ -96,10 +100,10 @@ export const H5: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
  * font size: 14px
  */
 export const H6: React.FC<HeadingProps> = ({ style, children, ...rest }) => (
-  <H style={{ ...styled('text-sm').style, ...style }} {...rest}>
+  <H style={[styled('text-sm').style, style]} {...rest}>
     {children}
   </H>
-);
+)
 
 /**
  * Custom Text Component
@@ -114,16 +118,16 @@ export const Text: React.FC<TextProps> = ({
   semibold,
   ...rest
 }) => {
-//   const fontFamily = () => {
-//     let font = { fontFamily: fonts.poppins };
-//     if (bold) {
-//       font = { fontFamily: fonts.poppinsBold };
-//     }
-//     if (semibold) {
-//       font = { fontFamily: fonts.poppinsSemiBold };
-//     }
-//     return font;
-//   };
+  //   const fontFamily = () => {
+  //     let font = { fontFamily: fonts.poppins };
+  //     if (bold) {
+  //       font = { fontFamily: fonts.poppinsBold };
+  //     }
+  //     if (semibold) {
+  //       font = { fontFamily: fonts.poppinsSemiBold };
+  //     }
+  //     return font;
+  //   };
 
   return (
     <RNText
@@ -136,8 +140,8 @@ export const Text: React.FC<TextProps> = ({
     >
       {children}
     </RNText>
-  );
-};
+  )
+}
 
 /**
  * Custom Text Description
@@ -160,11 +164,11 @@ export const TextDescription: React.FC<TextProps> = ({
   >
     {children}
   </Text>
-);
+)
 
 /**
  * Line Break
  *
  * similar to <br/> from web
  */
-export const Br: React.FC = () => <Text>{'\n'}</Text>;
+export const Br: React.FC = () => <Text>{'\n'}</Text>

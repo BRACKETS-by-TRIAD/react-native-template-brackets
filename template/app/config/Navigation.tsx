@@ -1,16 +1,14 @@
-import React, {useEffect} from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { t } from '@lingui/macro'
-import { isReadyRef, navigationRef } from '../services/NavigationService'
-import { ProfileScreen } from '../screens/ProfileScreen'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+import React, { useEffect } from 'react'
 import { HomeScreen } from '../screens/HomeScree'
+import { ProfileScreen } from '../screens/ProfileScreen'
+import { isReadyRef, navigationRef } from '../services/NavigationService'
 
 const AppTabs = createBottomTabNavigator()
 const AppTabsScreen = () => (
-  <AppTabs.Navigator
-    initialRouteName="HomeTab"
-  >
+  <AppTabs.Navigator initialRouteName="HomeTab">
     <AppTabs.Screen
       name="HomeTab"
       component={HomeScreen}
@@ -28,22 +26,21 @@ const AppTabsScreen = () => (
   </AppTabs.Navigator>
 )
 
-
 export const Navigation = () => {
-	useEffect(() => {
-		return () => {
-		  isReadyRef.current = false
-		}
-	}, [])
+  useEffect(() => {
+    return () => {
+      isReadyRef.current = false
+    }
+  }, [])
 
-	return (
-  <NavigationContainer
-    ref={navigationRef}
-    onReady={() => {
-      isReadyRef.current = true
-    }}
-  >
-		<AppTabsScreen/>
-	</NavigationContainer>
-)}
-  
+  return (
+    <NavigationContainer
+      ref={navigationRef}
+      onReady={() => {
+        isReadyRef.current = true
+      }}
+    >
+      <AppTabsScreen />
+    </NavigationContainer>
+  )
+}

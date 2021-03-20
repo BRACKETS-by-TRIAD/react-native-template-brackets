@@ -1,4 +1,4 @@
-import { NavigationContainerRef, StackActions } from '@react-navigation/native'
+import { NavigationContainerRef } from '@react-navigation/native'
 import React from 'react'
 
 export const isReadyRef: React.MutableRefObject<
