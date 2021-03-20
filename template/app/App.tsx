@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
+import { Navigation } from './config/Navigation';
 
 i18n.load('en', require('./locales/en/messages'))
 i18n.activate('en')
