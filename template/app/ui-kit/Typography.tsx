@@ -25,7 +25,7 @@ const H: React.FC<HeadingProps> = ({
 }) => (
   <RNText
     style={[
-      styled('text-grey-900 noWrap:flex-1 white:text-white', { noWrap, white })
+      styled('text-gray-900 noWrap:flex-1 white:text-white', { noWrap, white })
         .style,
       style ? style[0] : {},
     ]}
@@ -128,7 +128,7 @@ export const Text: React.FC<TextProps> = ({
   return (
     <RNText
       style={[
-        styled('text-grey-500 white:text-white', { white }).style,
+        styled('text-gray-500 white:text-white', { white }).style,
         // fontFamily(),
         style,
       ]}
@@ -153,7 +153,7 @@ export const TextDescription: React.FC<TextProps> = ({
 }) => (
   <Text
     style={[
-      styled('text-grey-500 text-sm  white:text-white', { white }).style,
+      styled('text-gray-500 text-sm  white:text-white', { white }).style,
       style,
     ]}
     {...rest}

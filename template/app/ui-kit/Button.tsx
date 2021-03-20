@@ -14,7 +14,7 @@ export const ButtonPrimary: React.FC<ButtonProps> = ({
 }) => (
   <Button
     buttonStyle={[
-      styled('bg-grey-900 rounded-xl h-12 small:rounded-lg small:h-10', {
+      styled('bg-gray-900 rounded-xl h-12 small:rounded-lg small:h-10', {
         small: rest.small,
       }).style,
       buttonStyle,
