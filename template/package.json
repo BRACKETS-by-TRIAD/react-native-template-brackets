@@ -12,7 +12,7 @@
     "run-ios:stagingRelease": "react-native run-ios --scheme STAGING --configuration Release",
     "run-ios:productionRelease": "react-native run-ios --scheme PRODUCTION --configuration Release",
     "postinstall": "patch-package",
-    "svg:generate": "npx @svgr/cli -d app/assets/svg/generated app/assets/svg --native --ext tsx --typescript",
+    "svg:gen": "npx @svgr/cli -d app/assets/svg/generated app/assets/svg --native --ext tsx --typescript",
     "config:gen": "node scripts/buildConfig.js",
     "tsc:check": "tsc --noEmit",
     "test": "jest",
