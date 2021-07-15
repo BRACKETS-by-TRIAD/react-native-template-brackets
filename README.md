@@ -20,7 +20,6 @@
 - [react-native-config](https://github.com/luggit/react-native-config) to manage
 separate environments (dev, staging, production).
 - [Mobx](https://mobx.js.org/) for state management
-- [formstate](https://formstate.github.io/#/) for forms
 - [lingui](https://github.com/lingui/js-lingui) for translations
 - UI kit
   - [react-native-styled.macro](https://github.com/z0al/react-native-styled.macro) - [tailwind css](https://tailwindcss.com/) like library for styling react native apps
