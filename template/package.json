@@ -64,7 +64,7 @@
     "@lingui/cli": "^3.4.0",
     "@lingui/macro": "^3.4.0",
     "@react-native-community/eslint-config": "^2.0.0",
-    "@types/jest": "^25.2.3",
+    "@types/jest": "^27.0.1",
     "@types/lodash": "^4.14.168",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
