@@ -1,5 +1,3 @@
-> **Disclaimer**: This template is still in Development.
-
 <div align="center">
     <img align="center" alt="BRACKETS logo" src="./template/app/assets/img/logo.png"/>
 </div>
@@ -25,8 +23,9 @@ separate environments (dev, staging, production).
   - [react-native-styled.macro](https://github.com/z0al/react-native-styled.macro) - [tailwind css](https://tailwindcss.com/) like library for styling react native apps
   - [React Native Elements](https://reactnativeelements.com/docs)
   - examples of Button & Typography components
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
+- [MMKV storage](https://github.com/mrousavy/react-native-mmkv) instead of AsyncStorage
 - [react-native-svg](https://github.com/react-native-svg/react-native-svg)
+- [formstate](https://formstate.github.io/#/) for forms
 - [Expo unimodules](https://docs.expo.io/)
 - handy npm scripts.
 
@@ -36,10 +35,8 @@ separate environments (dev, staging, production).
 - [ ] Reactron
 - [ ] error boundary  
 - [ ] no network info panel
-- [ ] eslint & husky
 - [ ] fastlane
-- [ ] version (branch) with graphql ?
-- [ ] force update screen ?
+- [ ] enable hermes
 - [ ] [webp image support ?](https://github.com/Aleksefo/react-native-webp-format#readme)
 
 ## Getting started
