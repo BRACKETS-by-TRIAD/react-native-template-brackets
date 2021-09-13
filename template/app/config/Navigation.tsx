@@ -1,10 +1,22 @@
 import { t } from '@lingui/macro'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { useFlipper } from '@react-navigation/devtools'
 import { NavigationContainer } from '@react-navigation/native'
 import React, { useEffect } from 'react'
 import { HomeScreen } from '../screens/HomeScree'
 import { ProfileScreen } from '../screens/ProfileScreen'
 import { isReadyRef, navigationRef } from '../services/NavigationService'
+
+export type RootStackParamList = {
+  Home: undefined
+  Profile: undefined
+}
+
+declare global {
+  namespace ReactNavigation {
+    interface RootParamList extends RootStackParamList {}
+  }
+}
 
 const AppTabs = createBottomTabNavigator()
 const AppTabsScreen = () => (
@@ -32,6 +44,7 @@ export const Navigation = () => {
       isReadyRef.current = false
     }
   }, [])
+  useFlipper(navigationRef)
 
   return (
     <NavigationContainer
