@@ -2,9 +2,8 @@ import { NavigationContainerRef } from '@react-navigation/native'
 import React from 'react'
 import { RootStackParamList } from '../config/Navigation'
 
-export const isReadyRef: React.MutableRefObject<
-  boolean | null
-> = React.createRef()
+export const isReadyRef: React.MutableRefObject<boolean | null> =
+  React.createRef()
 export const navigationRef: React.RefObject<
   NavigationContainerRef<RootStackParamList>
 > = React.createRef()
