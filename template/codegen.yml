@@ -1,0 +1,23 @@
+overwrite: true
+schema: 
+  - http://localhost:3000/graphql:
+      headers:
+        Authorization: "Bearer token..." 
+        content-type: "application/json"
+
+documents: "app/**/*.graphql"
+generates:
+  app/__generated__/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-urql"
+    config:
+      maybeValue: "T | undefined"
+      withHooks: true
+      withComponent: false
+      skipTypename: false
+      withHOC: false
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
